@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="player">
+			<p class="player-now">Now playing:</p>
+			<p class="player-title">Kết duyên</p>
+			
+			<!-- chứa cd -->
+			<div class="player-cd">
+				<div class="player-cd-img">
+
+				</div>
+			</div>
+
+			<!-- chứa control -->
+			<div class="player-control">
+
+				<!-- Phát lại -->
+				<div class="btn player-control-repeat">
+					<i class="fa-solid fa-rotate-right"></i>
+				</div>
+
+				<!-- Backward -->
+				<div class="btn player-control-backward">
+					<i class="fa-solid fa-backward-step"></i>
+				</div>
+
+				<!-- Play/pause-->
+				<div class="btn btn-play player-control-play">
+					<i class="fa-solid fa-circle-play"></i>
+					<i class="fa-solid fa-circle-pause"></i>
+				</div>
+				
+				<!-- Forward -->
+				<div class="btn player-control-forward">
+					<i class="fa-solid fa-forward-step"></i>
+				</div>
+
+				<!-- random -->
+				<div class="btn player-control-random">
+					<i class="fa-solid fa-shuffle"></i>
+				</div>
+			</div>
+
+			<!-- thời gian phát nhạc -->
+			<div class="player-time">
+				<span class="player-time-current">00:00</span>
+				<span class="player-time-duration">00:00</span>
+			</div>
+
+			<!-- thanh tiến trình -->
+			<div style="margin: 0 12px;" class="">
+				<input type="range" name="progress" id="progress" value="0" step="1" min="0" max="100">
+			</div>
+
+			<!-- Nơi chứa link nhac -->
+			<audio id="audio" src=""></audio>
+			
+		</div>
+
+		<div class="playList">
+			<div class="playList-item">
+				<img class="playList-item-img" src="./yumkhiemton.jpg" alt="">
+				<div class="playList-item-content">
+					<p class="playList-item-content-title">Kết duyên</p>
+					<p class="playList-item-content-singer">Yum x Linh</p>
+				</div>
+				<div class="playList-item-icon">
+					<i class="fa-solid fa-ellipsis"></i>
+				</div>
+			</div>
+			<div class="playList-item">
+				<img class="playList-item-img" src="./yumkhiemton.jpg" alt="">
+				<div class="playList-item-content">
+					<p class="playList-item-content-title">Kết duyên</p>
+					<p class="playList-item-content-singer">Yum x Linh</p>
+				</div>
+				<div class="playList-item-icon">
+					<i class="fa-solid fa-ellipsis"></i>
+				</div>
+			</div>
+			<div class="playList-item">
+				<img class="playList-item-img" src="./yumkhiemton.jpg" alt="">
+				<div class="playList-item-content">
+					<p class="playList-item-content-title">Kết duyên</p>
+					<p class="playList-item-content-singer">Yum x Linh</p>
+				</div>
+				<div class="playList-item-icon">
+					<i class="fa-solid fa-ellipsis"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
